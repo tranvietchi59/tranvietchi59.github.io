@@ -23,13 +23,11 @@
             <div style="text-align: right;"> </div>
 
 		<script>		
-		let myNumber=Math.floor(Math.random() * 10);
-     		echo "coucou 1";
-             	echo myNumber;
-		if(myNumber<11){echo "coucou"}
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * max);
+			}
+		echo getRandomInt(10);
 		</script>
-		  echo "coucou 2";
-             	echo myNumber;
 		
 <!--
                 <div style="text-align: center;"> <img style="width:328px; height: 245px;" alt="Photo"
