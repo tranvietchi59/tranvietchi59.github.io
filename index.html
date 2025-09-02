@@ -23,16 +23,27 @@
             <div style="text-align: right;"> </div>
 
 		<script>		
-		function getRandomInt(max) {
-			return Math.floor(Math.random() * max);
-			}
-		echo getRandomInt(10);
+		let myNumber = Math.floor(Math.random() * 10);
+		const presentation="<div style=\"text-align: center;\"> <img style=\"width:328px; height: 245px;\" alt=\"Photo \"";
+
+		if(myNumber===0){presentation += "src=\"Images/Chi1.jpg\" title=\"Avec mes &eacute;tudiants &agrave; Ho Chi Minh City : Hoang Van Ha, Nguyen Vinh Dao, moi, Hoang Bao An Mai et Nguyen Thi Le Thu\">";}
+           else if(myNumber===1){presentation += "src=\"Images/Chi2.jpg\" title=\"Pham Ngoc Thanh Mai, Nguyen Thi Le Thu, Hoang Van Ha et moi\">";}
+           else if(myNumber===2){presentation += "src=\"Images/Chi3.jpg\" title=\"Ecole de l'ANR MAEV : avec Martin Hutzenthaler, Sylvie M&eacute;l&eacute;ard, Arno Siri-J&eacute;gousse, Matthias Birkner, Julien Audiffren, Vincent Bansaye, Laurence Marsalle, Xu Mingyu et Cht&eacute;phanie L&eacute;ocard\">";}
+           else if(myNumber===3){presentation += "src=\"Images/Chi4.jpg\" title=\"Chi\">";}
+           else if(myNumber===4){presentation += "src=\"Images/Chi5.jpg\" title=\"avec Anton Wakolbinger, Sandra Kliem, Airam Blancas Benitez et Stephan Gufler\">";}
+           else if(myNumber===5){presentation += "src=\"Images/Chi6.jpg\" title=\"avec Radu Sto&iuml;ca, Mohamed El Machkouri et Julien Jacques\">";}
+           else if(myNumber===6){presentation += "src=\"Images/Chi7.jpg\" title=\"R&eacute;union de l'Operation Postes en 2009 : avec JB Gou&eacute;r&eacute;, Fran&ccedil;ois Bolley, Ingrid Violet, Maxime Amblard et Nicolas Passat\">";}
+           else if(myNumber===7){presentation += "src=\"Images/Chi8.jpg\" title=\"avec Jess Dhersin\">";}
+		   else if(myNumber===8){presentation += "src=\"Images/Chi9.jpg\" title=\"avec Thi Tran (droite)\">";}
+		   else {presentation += "src=\"Images/Chi10.jpg\" title=\"GT Lillois en 2017\">";}
+		
+		 <p class="presentation"></p>
+		
 		</script>
 		
 <!--
                 <div style="text-align: center;"> <img style="width:328px; height: 245px;" alt="Photo"
-                <script>
-		    if("myNumber"=="0"){echo "src=\"Images/Chi1.jpg\" title=\"Avec mes &eacute;tudiants &agrave; Ho Chi Minh City : Hoang Van Ha, Nguyen Vinh Dao, moi, Hoang Bao An Mai et Nguyen Thi Le Thu\"";}
+    	    if("myNumber"=="0"){echo "src=\"Images/Chi1.jpg\" title=\"Avec mes &eacute;tudiants &agrave; Ho Chi Minh City : Hoang Van Ha, Nguyen Vinh Dao, moi, Hoang Bao An Mai et Nguyen Thi Le Thu\"";}
                     if($i==1){echo "src=\"Images/Chi2.jpg\" title=\"Pham Ngoc Thanh Mai, Nguyen Thi Le Thu, Hoang Van Ha et moi\"";}
                     if($i==2){echo "src=\"Images/Chi3.jpg\" title=\"Ecole de l'ANR MAEV : avec Martin Hutzenthaler, Sylvie M&eacute;l&eacute;ard, Arno Siri-J&eacute;gousse, Matthias Birkner, Julien Audiffren, Vincent Bansaye, Laurence Marsalle, Xu Mingyu et Cht&eacute;phanie L&eacute;ocard\"";}
                     if($i==3){echo "src=\"Images/Chi4.jpg\" title=\"Chi\"";}
